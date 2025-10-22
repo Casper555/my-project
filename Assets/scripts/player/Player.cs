@@ -3,10 +3,10 @@ using UnityEngine.Animations;
 
 public class Playerscript : MonoBehaviour
 {
-    [SerializeField] float mouseSensitivity = 3f;
+    //[SerializeField] float mouseSensitivity = 3f;
     [SerializeField] float movementSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
-    [SerializeField] float mass = 1f;
+    //[SerializeField] float mass = 1f;
     [SerializeField] Transform cameraTransform;
 
     CharacterController controller;
@@ -57,7 +57,6 @@ public class Playerscript : MonoBehaviour
         }
 
 
-        // transform.Translate(input * movementSpeed * Time.deltaTime, Space.World);
         controller.Move((input * movementSpeed + velocity) * Time.deltaTime);
     }
     void UpdateLook()
